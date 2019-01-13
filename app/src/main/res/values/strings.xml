@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Engineers Universal Converter</string>
+
+    <string-array name="conversion_categories">
+        <item>Temperature</item>
+        <item>Distance</item>
+        <item>Weight</item>
+        <item>Number Systems</item>
+    </string-array>
+
+    <string-array name="temperature_units">
+        <item>Celsius</item>
+        <item>Kelvin</item>
+        <item>Fahrenheit</item>
+    </string-array>
+
+    <string-array name="weight_units">
+        <item>Kilograms</item>
+        <item>Grams</item>
+        <item>Tonnes</item>
+        <item>Pounds</item>
+    </string-array>
+
+    <string-array name="distance_units">
+        <item>Kilometres</item>
+        <item>Metres</item>
+        <item>Centimetres</item>
+        <item>Millimetres</item>
+        <item>Inches</item>
+        <item>Feet</item>
+        <item>Miles</item>
+    </string-array>
+
+    <string-array name="number_systems">
+        <item>Decimal</item>
+        <item>Hexadecimal</item>
+        <item>Octal</item>
+        <item>Unsigned Binary</item>
+    </string-array>
+</resources>
