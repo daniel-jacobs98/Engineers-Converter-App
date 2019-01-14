@@ -37,4 +37,13 @@
         <item>Octal</item>
         <item>Unsigned Binary</item>
     </string-array>
+
+    <string-array name="volume_units">
+        <item>Cubic Metres</item>
+        <item>Cubic Centimetres</item>
+        <item>Cubic Millimetres</item>
+        <item>Litres</item>
+        <item>US Gallons</item>
+        <item>Fluid Ounces</item>
+    </string-array>
 </resources>
