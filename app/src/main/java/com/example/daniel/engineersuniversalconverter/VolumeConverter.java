@@ -28,24 +28,19 @@ public class VolumeConverter {
 
         switch (convertTo) {
             case "Cubic Centimetres":
-                convertedVolume = mToCM(metresCubed);
-                break;
+                return mToCM(metresCubed);
 
             case "Cubic Millimetres":
-                convertedVolume = mToMM(metresCubed);
-                break;
+                return mToMM(metresCubed);
 
             case "Litres":
-                convertedVolume = mToLitres(metresCubed);
-                break;
+                return mToLitres(metresCubed);
 
             case "US Gallons":
-                convertedVolume = mToGallons(metresCubed);
-                break;
+                return mToGallons(metresCubed);
 
             case "Fluid Ounces":
-                convertedVolume = mToOunces(metresCubed);
-                break;
+                return mToOunces(metresCubed);
         }
         return convertedVolume;
     }

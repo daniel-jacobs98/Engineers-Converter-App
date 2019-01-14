@@ -5,6 +5,7 @@
         <item>Temperature</item>
         <item>Distance</item>
         <item>Weight</item>
+        <item>Volume</item>
         <item>Number Systems</item>
     </string-array>
 

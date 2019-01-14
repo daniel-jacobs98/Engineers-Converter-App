@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
                     "Temperature" -> R.array.temperature_units
                     "Weight" -> R.array.weight_units
                     "Distance" -> R.array.distance_units
+                    "Volume" -> R.array.volume_units
                     else -> R.array.number_systems
                 }
 
@@ -57,10 +58,19 @@ class MainActivity : AppCompatActivity() {
                 "Temperature" -> clickConvertTemp(number1.text.toString(), unitSpinner1.selectedItem.toString(), unitSpinner2.selectedItem.toString())
                 "Weight" -> clickConvertWeight(number1.text.toString(), unitSpinner1.selectedItem.toString(), unitSpinner2.selectedItem.toString())
                 "Distance" -> clickConvertDistance(number1.text.toString(), unitSpinner1.selectedItem.toString(), unitSpinner2.selectedItem.toString())
+                "Volume" -> clickConvertVolume(number1.text.toString(), unitSpinner1.selectedItem.toString(), unitSpinner2.selectedItem.toString())
                 else -> clickConvertNumberSys(number1.text.toString(), unitSpinner1.selectedItem.toString(), unitSpinner2.selectedItem.toString())
             }
         }
 
+    }
+
+    private fun clickConvertVolume(originalString : String, convertFrom : String, convertTo : String){
+        val orig = originalString.toDoubleOrNull()
+        when (orig) {
+            null -> Toast.makeText(applicationContext, "Cannot convert!", Toast.LENGTH_SHORT).show()
+            else -> number2.setText("%.4f".format(VolumeConverter.volumeConversion(orig, convertFrom, convertTo)))
+        }
     }
 
     private fun clickConvertTemp(originalString : String, convertFrom : String, convertTo : String){
